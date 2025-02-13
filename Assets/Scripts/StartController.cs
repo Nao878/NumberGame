@@ -7,6 +7,5 @@ public class StartController : MonoBehaviour
     void Start()
     {
         Debug.Log("StartController");
-        Debug.Log("A");
     }
 }

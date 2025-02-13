@@ -9,7 +9,7 @@ using UnityEngine.TextCore.Text;
 
 public class NumberScript : MonoBehaviour
 {
-    public TextMeshProUGUI TurnText,activeText;
+    public TextMeshProUGUI activeText;
     public bool isWriting,startBarDelete,isStart = false;
     public float writeSpeed;
     private float g = 0,h = 0.02f,j = 0,k = 0;
@@ -34,11 +34,7 @@ public class NumberScript : MonoBehaviour
 
         yield return StartCoroutine(PlayWinEffect("BATTLE START"));
 
-        TurnText.text = "";
-        yield return new WaitForSeconds(1.5f);
-        Write("Battle Start");
-        yield return new WaitForSeconds(2);
-        Write("Your Turn");
+        yield return new WaitForSeconds(3.5f);
         StartCoroutine(WriteActive("Active"));
         yield return new WaitForSeconds(1.5f);
         startBarDelete = true;
@@ -74,24 +70,6 @@ public class NumberScript : MonoBehaviour
             startBar.transform.localScale -= Vector3.up * 0.05f;
         }
         target.transform.Rotate(0, 0, -0.2f);
-    }
-
-    public void Write(string s)
-    {
-        TurnText.text = "";
-        writeSpeed = 0.1f;
-        StartCoroutine(IEWrite(s));
-    }
-
-    IEnumerator IEWrite (string s)
-    {
-        isWriting = true;
-        for (int i = 0; i < s.Length; i++)
-        {
-            TurnText.text += s.Substring (i,1);
-            yield return new WaitForSeconds (writeSpeed);
-        }
-        isWriting = false;
     }
 
     IEnumerator WriteActive(string a)
