@@ -8,9 +8,4 @@ public class StartController : MonoBehaviour
     {
         Debug.Log("StartController");
     }
-
-    void Update()
-    {
-        
-    }
 }
