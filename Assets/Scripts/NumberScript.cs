@@ -10,10 +10,10 @@ using UnityEngine.TextCore.Text;
 public class NumberScript : MonoBehaviour
 {
     public TextMeshProUGUI activeText;
-    public bool isWriting,startBarDelete,isStart = false;
+    public bool isWriting,isStart = false;
     public float writeSpeed;
     private float g = 0,h = 0.02f,j = 0,k = 0;
-    public GameObject target,startBar;
+    public GameObject target;
     public GameObject blackAttack;
     public Animator anim;
 
@@ -37,10 +37,7 @@ public class NumberScript : MonoBehaviour
         yield return new WaitForSeconds(3.5f);
         StartCoroutine(WriteActive("Active"));
         yield return new WaitForSeconds(1.5f);
-        startBarDelete = true;
         yield return new WaitForSeconds(0.5f);
-        startBarDelete = false;
-        startBar.SetActive(false);
         isStart = true;
         activeText.text = "";
         CreateSelectIndicator();
@@ -63,11 +60,6 @@ public class NumberScript : MonoBehaviour
             playerSPBars[2].fillAmount = j;
             playerSPBars[3].fillAmount = j;
             enemySPBar.fillAmount = j;
-            startBar.transform.position += new Vector3(j * 6.3f, 0, 0);
-        }
-        if (startBarDelete)
-        {
-            startBar.transform.localScale -= Vector3.up * 0.05f;
         }
         target.transform.Rotate(0, 0, -0.2f);
     }
