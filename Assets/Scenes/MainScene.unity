@@ -460,6 +460,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 228165900}
   m_CullTransparentMesh: 1
+--- !u!1 &234048711
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 234048712}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &234048712
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 234048711}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.8953629, y: 15.926049, z: 90.05028}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &251989311
 GameObject:
   m_ObjectHideFlags: 0
@@ -826,6 +857,7 @@ MonoBehaviour:
   startBar: {fileID: 1721033429}
   blackAttack: {fileID: 1590785620}
   anim: {fileID: 1590785624}
+  startController: {fileID: 0}
   playerHPBars:
   - {fileID: 312340622}
   - {fileID: 1706056382}
@@ -2168,6 +2200,7 @@ MonoBehaviour:
   startBar: {fileID: 1721033429}
   blackAttack: {fileID: 1590785620}
   anim: {fileID: 1590785624}
+  startController: {fileID: 0}
   playerHPBars:
   - {fileID: 312340622}
   - {fileID: 1706056382}
@@ -2666,6 +2699,7 @@ MonoBehaviour:
   startBar: {fileID: 1721033429}
   blackAttack: {fileID: 1590785620}
   anim: {fileID: 1590785624}
+  startController: {fileID: 0}
   playerHPBars:
   - {fileID: 312340622}
   - {fileID: 1706056382}
@@ -3034,6 +3068,7 @@ MonoBehaviour:
   startBar: {fileID: 1721033429}
   blackAttack: {fileID: 1590785620}
   anim: {fileID: 1590785624}
+  startController: {fileID: 0}
   playerHPBars:
   - {fileID: 312340622}
   - {fileID: 1706056382}
@@ -5075,6 +5110,7 @@ MonoBehaviour:
   startBar: {fileID: 1721033429}
   blackAttack: {fileID: 1590785620}
   anim: {fileID: 1590785624}
+  startController: {fileID: 0}
   playerHPBars:
   - {fileID: 312340622}
   - {fileID: 1706056382}
@@ -6471,6 +6507,7 @@ MonoBehaviour:
   startBar: {fileID: 1721033429}
   blackAttack: {fileID: 1590785620}
   anim: {fileID: 1590785624}
+  startController: {fileID: 0}
   playerHPBars:
   - {fileID: 312340622}
   - {fileID: 1706056382}
@@ -6861,3 +6898,4 @@ SceneRoots:
   - {fileID: 963194228}
   - {fileID: 1167280599}
   - {fileID: 368028559}
+  - {fileID: 234048712}
