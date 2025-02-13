@@ -460,6 +460,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 228165900}
   m_CullTransparentMesh: 1
+--- !u!1 &234048711
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 234048712}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &234048712
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 234048711}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.8953629, y: 15.926049, z: 90.05028}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &251989311
 GameObject:
   m_ObjectHideFlags: 0
@@ -777,7 +808,6 @@ GameObject:
   - component: {fileID: 421415596}
   - component: {fileID: 421415599}
   - component: {fileID: 421415598}
-  - component: {fileID: 421415597}
   m_Layer: 5
   m_Name: Num6
   m_TagString: Untagged
@@ -804,60 +834,6 @@ RectTransform:
   m_AnchoredPosition: {x: 261.8, y: -92}
   m_SizeDelta: {x: 101.41, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &421415597
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 421415595}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c2d2811c4007be438df3922b444de22, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TurnText: {fileID: 1115542411}
-  activeText: {fileID: 1141479411}
-  isWriting: 0
-  startBarDelete: 0
-  isStart: 0
-  writeSpeed: 0.2
-  target: {fileID: 2055992442}
-  startBar: {fileID: 1721033429}
-  blackAttack: {fileID: 1590785620}
-  anim: {fileID: 1590785624}
-  playerHPBars:
-  - {fileID: 312340622}
-  - {fileID: 1706056382}
-  - {fileID: 1052552851}
-  - {fileID: 1214813784}
-  playerImages:
-  - {fileID: 616057743}
-  - {fileID: 1221732613}
-  - {fileID: 901685066}
-  - {fileID: 1726366711}
-  playerSPBars:
-  - {fileID: 1464294511}
-  - {fileID: 1338026389}
-  - {fileID: 39242802}
-  - {fileID: 1076773915}
-  enemyHPBar: {fileID: 804734900}
-  enemyImage: {fileID: 445898925}
-  enemySPBar: {fileID: 791810542}
-  selectIndicator: {fileID: 2078078526}
-  winPanel: {fileID: 37243485}
-  winText: {fileID: 725193541}
-  uiCanvas: {fileID: 1167280598}
-  selectPos:
-  - {fileID: 1015446619}
-  - {fileID: 1433059178}
-  - {fileID: 251989311}
-  - {fileID: 566098088}
-  numberTexts:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!114 &421415598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2168,6 +2144,7 @@ MonoBehaviour:
   startBar: {fileID: 1721033429}
   blackAttack: {fileID: 1590785620}
   anim: {fileID: 1590785624}
+  startController: {fileID: 0}
   playerHPBars:
   - {fileID: 312340622}
   - {fileID: 1706056382}
@@ -2617,7 +2594,6 @@ GameObject:
   - component: {fileID: 837688271}
   - component: {fileID: 837688274}
   - component: {fileID: 837688273}
-  - component: {fileID: 837688272}
   m_Layer: 5
   m_Name: Num2
   m_TagString: Untagged
@@ -2644,60 +2620,6 @@ RectTransform:
   m_AnchoredPosition: {x: -122.9, y: -92}
   m_SizeDelta: {x: 101.41, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &837688272
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 837688270}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c2d2811c4007be438df3922b444de22, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TurnText: {fileID: 1115542411}
-  activeText: {fileID: 1141479411}
-  isWriting: 0
-  startBarDelete: 0
-  isStart: 0
-  writeSpeed: 0.2
-  target: {fileID: 2055992442}
-  startBar: {fileID: 1721033429}
-  blackAttack: {fileID: 1590785620}
-  anim: {fileID: 1590785624}
-  playerHPBars:
-  - {fileID: 312340622}
-  - {fileID: 1706056382}
-  - {fileID: 1052552851}
-  - {fileID: 1214813784}
-  playerImages:
-  - {fileID: 616057743}
-  - {fileID: 1221732613}
-  - {fileID: 901685066}
-  - {fileID: 1726366711}
-  playerSPBars:
-  - {fileID: 1464294511}
-  - {fileID: 1338026389}
-  - {fileID: 39242802}
-  - {fileID: 1076773915}
-  enemyHPBar: {fileID: 804734900}
-  enemyImage: {fileID: 445898925}
-  enemySPBar: {fileID: 791810542}
-  selectIndicator: {fileID: 2078078526}
-  winPanel: {fileID: 37243485}
-  winText: {fileID: 725193541}
-  uiCanvas: {fileID: 1167280598}
-  selectPos:
-  - {fileID: 1015446619}
-  - {fileID: 1433059178}
-  - {fileID: 251989311}
-  - {fileID: 566098088}
-  numberTexts:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!114 &837688273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2985,7 +2907,6 @@ GameObject:
   - component: {fileID: 888723513}
   - component: {fileID: 888723516}
   - component: {fileID: 888723515}
-  - component: {fileID: 888723514}
   m_Layer: 5
   m_Name: Num5
   m_TagString: Untagged
@@ -3012,60 +2933,6 @@ RectTransform:
   m_AnchoredPosition: {x: 166.5, y: -92}
   m_SizeDelta: {x: 101.41, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &888723514
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 888723512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c2d2811c4007be438df3922b444de22, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TurnText: {fileID: 1115542411}
-  activeText: {fileID: 1141479411}
-  isWriting: 0
-  startBarDelete: 0
-  isStart: 0
-  writeSpeed: 0.2
-  target: {fileID: 2055992442}
-  startBar: {fileID: 1721033429}
-  blackAttack: {fileID: 1590785620}
-  anim: {fileID: 1590785624}
-  playerHPBars:
-  - {fileID: 312340622}
-  - {fileID: 1706056382}
-  - {fileID: 1052552851}
-  - {fileID: 1214813784}
-  playerImages:
-  - {fileID: 616057743}
-  - {fileID: 1221732613}
-  - {fileID: 901685066}
-  - {fileID: 1726366711}
-  playerSPBars:
-  - {fileID: 1464294511}
-  - {fileID: 1338026389}
-  - {fileID: 39242802}
-  - {fileID: 1076773915}
-  enemyHPBar: {fileID: 804734900}
-  enemyImage: {fileID: 445898925}
-  enemySPBar: {fileID: 791810542}
-  selectIndicator: {fileID: 2078078526}
-  winPanel: {fileID: 37243485}
-  winText: {fileID: 725193541}
-  uiCanvas: {fileID: 1167280598}
-  selectPos:
-  - {fileID: 1015446619}
-  - {fileID: 1433059178}
-  - {fileID: 251989311}
-  - {fileID: 566098088}
-  numberTexts:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!114 &888723515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5026,7 +4893,6 @@ GameObject:
   - component: {fileID: 1523468591}
   - component: {fileID: 1523468594}
   - component: {fileID: 1523468593}
-  - component: {fileID: 1523468592}
   m_Layer: 5
   m_Name: Num3
   m_TagString: Untagged
@@ -5053,60 +4919,6 @@ RectTransform:
   m_AnchoredPosition: {x: -30.6, y: -92}
   m_SizeDelta: {x: 101.41, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1523468592
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1523468590}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c2d2811c4007be438df3922b444de22, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TurnText: {fileID: 1115542411}
-  activeText: {fileID: 1141479411}
-  isWriting: 0
-  startBarDelete: 0
-  isStart: 0
-  writeSpeed: 0.2
-  target: {fileID: 2055992442}
-  startBar: {fileID: 1721033429}
-  blackAttack: {fileID: 1590785620}
-  anim: {fileID: 1590785624}
-  playerHPBars:
-  - {fileID: 312340622}
-  - {fileID: 1706056382}
-  - {fileID: 1052552851}
-  - {fileID: 1214813784}
-  playerImages:
-  - {fileID: 616057743}
-  - {fileID: 1221732613}
-  - {fileID: 901685066}
-  - {fileID: 1726366711}
-  playerSPBars:
-  - {fileID: 1464294511}
-  - {fileID: 1338026389}
-  - {fileID: 39242802}
-  - {fileID: 1076773915}
-  enemyHPBar: {fileID: 804734900}
-  enemyImage: {fileID: 445898925}
-  enemySPBar: {fileID: 791810542}
-  selectIndicator: {fileID: 2078078526}
-  winPanel: {fileID: 37243485}
-  winText: {fileID: 725193541}
-  uiCanvas: {fileID: 1167280598}
-  selectPos:
-  - {fileID: 1015446619}
-  - {fileID: 1433059178}
-  - {fileID: 251989311}
-  - {fileID: 566098088}
-  numberTexts:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!114 &1523468593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6422,7 +6234,6 @@ GameObject:
   - component: {fileID: 2102597665}
   - component: {fileID: 2102597668}
   - component: {fileID: 2102597667}
-  - component: {fileID: 2102597666}
   m_Layer: 5
   m_Name: Num4
   m_TagString: Untagged
@@ -6449,60 +6260,6 @@ RectTransform:
   m_AnchoredPosition: {x: 66.5, y: -92}
   m_SizeDelta: {x: 101.41, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2102597666
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2102597664}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c2d2811c4007be438df3922b444de22, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TurnText: {fileID: 1115542411}
-  activeText: {fileID: 1141479411}
-  isWriting: 0
-  startBarDelete: 0
-  isStart: 0
-  writeSpeed: 0.2
-  target: {fileID: 2055992442}
-  startBar: {fileID: 1721033429}
-  blackAttack: {fileID: 1590785620}
-  anim: {fileID: 1590785624}
-  playerHPBars:
-  - {fileID: 312340622}
-  - {fileID: 1706056382}
-  - {fileID: 1052552851}
-  - {fileID: 1214813784}
-  playerImages:
-  - {fileID: 616057743}
-  - {fileID: 1221732613}
-  - {fileID: 901685066}
-  - {fileID: 1726366711}
-  playerSPBars:
-  - {fileID: 1464294511}
-  - {fileID: 1338026389}
-  - {fileID: 39242802}
-  - {fileID: 1076773915}
-  enemyHPBar: {fileID: 804734900}
-  enemyImage: {fileID: 445898925}
-  enemySPBar: {fileID: 791810542}
-  selectIndicator: {fileID: 2078078526}
-  winPanel: {fileID: 37243485}
-  winText: {fileID: 725193541}
-  uiCanvas: {fileID: 1167280598}
-  selectPos:
-  - {fileID: 1015446619}
-  - {fileID: 1433059178}
-  - {fileID: 251989311}
-  - {fileID: 566098088}
-  numberTexts:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!114 &2102597667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6861,3 +6618,4 @@ SceneRoots:
   - {fileID: 963194228}
   - {fileID: 1167280599}
   - {fileID: 368028559}
+  - {fileID: 234048712}

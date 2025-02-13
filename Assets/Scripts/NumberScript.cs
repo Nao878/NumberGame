@@ -17,8 +17,13 @@ public class NumberScript : MonoBehaviour
     public GameObject blackAttack;
     public Animator anim;
 
+    public static NumberScript Instance { get; private set; }
+    public StartController startController;
+
     IEnumerator Start()
     {
+        //startController.gameObject.SetActive(true);
+
         playerTeam.Add(new Character("Player1", 100, 20, false, playerHPBars[0], playerImages[0]));
         playerTeam.Add(new Character("Player2", 80, 25, false, playerHPBars[1], playerImages[1]));
         playerTeam.Add(new Character("Player3", 120, 15, false, playerHPBars[2], playerImages[2]));
