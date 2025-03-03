@@ -17,7 +17,7 @@ public class NumberScript : MonoBehaviour
     public Animator anim;
 
     public static NumberScript Instance { get; private set; }
-    public StartController startController;
+    //public StartController startController;
 
     IEnumerator Start()
     {

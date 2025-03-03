@@ -2129,21 +2129,18 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 770926567}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5c2d2811c4007be438df3922b444de22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   activeText: {fileID: 1141479411}
   isWriting: 0
-  startBarDelete: 0
   isStart: 0
   writeSpeed: 0.2
   target: {fileID: 2055992442}
-  startBar: {fileID: 0}
   blackAttack: {fileID: 1590785620}
   anim: {fileID: 1590785624}
-  startController: {fileID: 0}
   playerHPBars:
   - {fileID: 312340622}
   - {fileID: 1706056382}
