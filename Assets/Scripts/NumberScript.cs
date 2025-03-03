@@ -13,8 +13,7 @@ public class NumberScript : MonoBehaviour
     public bool isWriting,isStart = false;
     public float writeSpeed;
     private float g = 0,h = 0.02f,j = 0,k = 0;
-    public GameObject target;
-    public GameObject blackAttack;
+    public GameObject target,blackAttack;
     public Animator anim;
 
     public static NumberScript Instance { get; private set; }
@@ -32,12 +31,11 @@ public class NumberScript : MonoBehaviour
         Debug.Log("Battle Start!");
         NextTurn();
 
-        yield return StartCoroutine(PlayWinEffect("BATTLE START"));
+        yield return StartCoroutine(PlayWinEffect("Battle Start"));
 
         yield return new WaitForSeconds(3.5f);
         StartCoroutine(WriteActive("Active"));
-        yield return new WaitForSeconds(1.5f);
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(2f);
         isStart = true;
         activeText.text = "";
         CreateSelectIndicator();
