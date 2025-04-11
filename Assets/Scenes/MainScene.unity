@@ -470,7 +470,7 @@ GameObject:
   m_Component:
   - component: {fileID: 234048712}
   m_Layer: 0
-  m_Name: GameManager
+  m_Name: PlayerManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1998,7 +1998,6 @@ GameObject:
   - component: {fileID: 770926568}
   - component: {fileID: 770926570}
   - component: {fileID: 770926569}
-  - component: {fileID: 770926571}
   m_Layer: 5
   m_Name: Num1
   m_TagString: Untagged
@@ -2122,59 +2121,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 770926567}
   m_CullTransparentMesh: 1
---- !u!114 &770926571
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 770926567}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c2d2811c4007be438df3922b444de22, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  activeText: {fileID: 1141479411}
-  isWriting: 0
-  isStart: 0
-  writeSpeed: 0.2
-  target: {fileID: 2055992442}
-  blackAttack: {fileID: 1590785620}
-  anim: {fileID: 1590785624}
-  playerHPBars:
-  - {fileID: 312340622}
-  - {fileID: 1706056382}
-  - {fileID: 1052552851}
-  - {fileID: 1214813784}
-  playerImages:
-  - {fileID: 616057743}
-  - {fileID: 1221732613}
-  - {fileID: 901685066}
-  - {fileID: 1726366711}
-  playerSPBars:
-  - {fileID: 1464294511}
-  - {fileID: 1338026389}
-  - {fileID: 39242802}
-  - {fileID: 1076773915}
-  enemyHPBar: {fileID: 804734900}
-  enemyImage: {fileID: 445898925}
-  enemySPBar: {fileID: 791810542}
-  selectIndicator: {fileID: 2078078526}
-  winPanel: {fileID: 37243485}
-  winText: {fileID: 725193541}
-  uiCanvas: {fileID: 1167280598}
-  selectPos:
-  - {fileID: 1015446619}
-  - {fileID: 1433059178}
-  - {fileID: 251989311}
-  - {fileID: 566098088}
-  numberTexts:
-  - {fileID: 770926569}
-  - {fileID: 837688273}
-  - {fileID: 1523468593}
-  - {fileID: 2102597667}
-  - {fileID: 888723515}
-  - {fileID: 421415598}
 --- !u!1 &791810540
 GameObject:
   m_ObjectHideFlags: 0
